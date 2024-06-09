@@ -1,0 +1,74 @@
+/* Estilos generales */
+header{
+    text-align: center;
+    background-color: #2a2a2a;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+.form {
+    max-width: 400px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Color del texto del label */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Ajusta el ancho del input */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ffd700; /* Color de fondo amarillo */
+    color: #000; /* Color del texto negro */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto; /* Centra el botón */
+}
+
+button:hover {
+    background-color: #ffcc00; /* Color de fondo amarillo más claro al pasar el mouse */
+}
+
+footer {
+    background-color: #333;
+    color: #727272;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

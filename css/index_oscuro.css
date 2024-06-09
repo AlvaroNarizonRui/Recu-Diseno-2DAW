@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+main{
+    min-height: 777px;
+}
+
+header {
+    background-color:#2a2a2a;
+    color: #ffffff;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Logo - Navegación - Ícono de brillo */
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.logo {
+    max-width: 100%;
+    height: 70px;
+}
+
+.navegacion_principal {
+    justify-self: end; /* Alinea la navegación al borde derecho */
+}
+
+.homeimagen {
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.navegacion_principal ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    justify-content: end; /* Alinea los elementos de navegación al borde derecho */
+}
+
+.navegacion_principal a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navegacion_principal a img {
+    max-width: 100%;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: auto 1fr; /* Logo - Navegación */
+        justify-items: center;
+    }
+
+    .navegacion_principal {
+        justify-self: center; /* Alinea la navegación al centro en pantallas pequeñas */
+    }
+}
+
+.menu {
+    margin-top: 40px;
+    display: grid;
+    color: #ffffff;
+    background-color: #1e1e1e;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Hacer que los elementos se ajusten al ancho de la pantalla */
+    gap: 15px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu_categorias {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+}
+
+.menu_categorias a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 10px; /* Agrega espacio entre los elementos */
+}
+
+@media (max-width: 750px) {
+    .menu_categorias {
+        justify-content: center; /* Centra los elementos en dispositivos móviles */
+        padding-left: 0; /* Elimina el relleno a la izquierda en dispositivos móviles */
+    }
+
+    .producto img {
+        min-height: 40%;
+    }
+}
+
+/* Estilos para la rejilla de productos destacados */
+.contenedor_productos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Estilos para las cartas de productos */
+.producto {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: #ffffff50;
+    text-align: center;
+    justify-content: center;
+    background-color: #2a2a2a;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: scaleX(1.1);
+}
+
+.producto img {
+    margin: 0;
+    max-height: 60%;
+    height: 60%;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedor_boton {
+    width: 100%;
+    height: 10%;
+    padding: 0;
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: center;
+    justify-self: center;
+    background-color: #3b3b3b;
+    border: none;
+}
+
+.contenedor_boton:hover {
+    background-color: #3b3b3ba8;
+}
+
+footer {
+    background-color: #121212;
+    color: #727272;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+}
